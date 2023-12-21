@@ -7,157 +7,76 @@
 
     <main class="main">
       <article class="event">
-        <form class="reserve">
-          <div class="reserve__container">
-            <div class="reserve__booking">
-              <div class="reserve__checks">
-                <h4 class="reserve__section-title">
-                  Забронировать столик
-                </h4>
-                <label class="reserve__check check check--red">
-                  <input
-                    type="checkbox"
-                    name="table_1"
-                    class="check__input"
-                    checked
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label check__label--red">1 стол</span>
-                </label>
-                <label class="reserve__check check">
-                  <input
-                    type="checkbox"
-                    name="table_2"
-                    class="check__input"
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label">2 стол</span>
-                </label>
-                <label class="reserve__check check">
-                  <input
-                    type="checkbox"
-                    name="table_3"
-                    class="check__input"
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label">3 стол</span>
-                </label>
-                <label class="reserve__check check check--red">
-                  <input
-                    type="checkbox"
-                    name="table_4"
-                    class="check__input"
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label check__label--red">4 стол</span>
-                </label>
-                <label class="reserve__check check check--disabled">
-                  <input
-                    type="checkbox"
-                    name="table_5"
-                    class="check__input"
-                    disabled
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label">5 стол </span>
-                </label>
-                <label class="reserve__check check">
-                  <input
-                    type="checkbox"
-                    name="table_6"
-                    class="check__input"
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label">6 стол</span>
-                </label>
-                <label class="reserve__check check check--red">
-                  <input
-                    type="checkbox"
-                    name="table_7"
-                    class="check__input"
-                    checked
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label check__label--red">7 стол</span>
-                </label>
-                <label class="reserve__check check check--red">
-                  <input
-                    type="checkbox"
-                    name="table_8"
-                    class="check__input"
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label check__label--red">8 стол</span>
-                </label>
-                <label class="reserve__check check check--red">
-                  <input
-                    type="checkbox"
-                    name="table_9"
-                    class="check__input"
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label check__label--red">9 стол</span>
-                </label>
-                <label class="reserve__check check">
-                  <input
-                    type="checkbox"
-                    name="table_10"
-                    class="check__input"
-                    checked
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label">10 стол</span>
-                </label>
-                <label class="reserve__check check">
-                  <input
-                    type="checkbox"
-                    name="table_11"
-                    class="check__input"
-                  />
-                  <span class="check__mark"></span>
-                  <span class="check__label">11 стол</span>
-                </label>
-              </div>
-  
-              <div class="reserve__scheme">
-                <div class="reserve__scheme-container">
-                  <h4 class="reserve__scheme-title">Сцена</h4>
-                              
-                  <div class="reserve__scheme-wrapper">
-                    <svg
-                      class="reserve__scene scene"
-                      width="780"
-                      height="399"
-                      viewBox="0 0 780 399"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <use xlink:href = "assets/icons/symbols.svg#scene"></use>
-                    </svg>
-                  </div>
-                </div>
+        <header class="event__header">
+          <h1 class="event__title title">Вечер | The Best of Sade</h1>
+
+          <div class="event__about">
+            <div class="event__info">
+              <time datetime="2023-12-16T20:00" class="event__time">
+                16/12/2023
+              </time>
+
+              <div class="event__info-text">
+                Кафе "Птичка"
               </div>
             </div>
-            
-            <div class="reserve__order">
-              <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
-              <div class="reserve__tickets-list">
-                <div class="reserve__tickets">
-                  <div class="reserve__qty" data-caption="шт." data-price="1400">0</div>
-                  <div class="reserve__sum" data-currency="₽">0</div>
-                </div>
-                <div class="reserve__tickets">
-                  <div class="reserve__qty" data-caption="шт." data-price="1250">0</div>
-                  <div class="reserve__sum" data-currency="₽">0</div>
-                </div>
+
+            <picture class="event__picture">
+              <img class = "event__image" src="assets/images/events/sade.jpg" alt="Вечер | The Best of Sade">
+            </picture>
+
+            <div class="event__info">
+              <span class="event__time" data-caption = "начало">
+                20.00
+              </span>
+
+              <div class="event__info-text">
+                Ленина 10 | 2 этаж
               </div>
-              <div class="reserve__total" data-caption="Сумма" data-currency="₽">0</div>
-              <button type="submit" class="btn btn--red reserve__submit">
-                Купить билеты
-              </button>
             </div>
           </div>
-        </form>
+        </header>
+        
+        <div class="event__container">
+          <div class="event__content content">
+            <h5>Программа мероприятия:</h5>
+            <ul>
+              <li>20:15 — Приветствие гостей</li>
+              <li>20:30 — Первая подача блюд | Салаты</li>
+              <li>20:40 — Живой вокал | Композиции 1-3</li>
+              <li>21:20 — Подача горячих блюд</li>
+              <li>21:30 — Живой вокал | Композиции 4-7</li>
+              <li>22:15 — Подача десерта</li>
+              <li>22:30 — Живой вокал | Композиции 8-9</li>
+              <li>23:00 — Завершение вечера</li>
+            </ul>
+            <br/>
+
+            <h5>The Best Of Sade</h5>
+            <p>
+              Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты группы, раритеты и их любимые треки. 
+            </p>
+            <p>
+              Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.<br/> 
+              Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
+            </p>
+            <br/>
+
+            <ol>
+              <li>Your Love Is King</li>
+              <li>Hang On To Your Love</li>
+              <li>Smooth Operator</li>
+              <li>Jezebel</li>
+              <li>The Sweetest Taboo</li>
+              <li>Is It A Crime</li>
+              <li>As Good As The First Time</li>
+              <li>Love Is Stronger Than Pride</li>
+              <li>Paradise</li>
+            <ol>
+          </div>
+          <!-- prettier-ignore -->
+          @@include('blocks/reserve.html', {"class": "event__reserve"})
+        </div>
       </article>
     </main>
 
