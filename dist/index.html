@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 <html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Lenni Art</title>
   <link rel="stylesheet" href="styles/styles.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
+
 
 <body class="body">
   <header class="page-header">
@@ -47,7 +50,9 @@
           место для настоящего
         </p>
       </header>
+
       <section class="offers home__offers"></section>
+
       <section class="about home__about">
         <div class="about__container">
           <h2 class="about__section-title section-title">
@@ -84,10 +89,10 @@
               <img class="about__img2" src="assets/images/about3.jpg" />
             </picture>
             <div class="about__block3-wrapper">
-              <p class="about__text about__text--mb140">
+              <p class="about__text about__text">
                 Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.
               </p>
-              <a href="#" class="about__link link">
+              <a href="#" class="about__link link link--mb20">
                 <span class="link__name">
                   Смотреть
                 </span>
@@ -99,7 +104,77 @@
           </div>
         </div>
       </section>
-      <section class="upcoming home__upcoming"></section>
+
+      <section class="upcoming home__upcoming">
+        <div class="upcoming__container">
+          <div class="upcoming__border-top"></div>
+          <h2 class="upcoming__title section-title">Мероприятия</h2>
+          <div class="upcoming__listing listing__events-list">
+            <!-- prettier-ignore -->
+            <article class="event-card  upcoming__listing listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
+                </picture>
+
+                <h2 class="event-card__title">Собираемся и слушаем альбом Nirvana. Nirvana</h2>
+
+                <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+
+                <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
+              </a>
+            </article>
+            <article class="event-card  upcoming__listing listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="assets/images/events/stuff.jpg" alt="stuff" class="event-card__img" />
+                </picture>
+
+                <h2 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h2>
+
+                <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+
+                <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
+              </a>
+            </article>
+            <article class="event-card  upcoming__listing listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="assets/images/events/sade.jpg" alt="sade" class="event-card__img" />
+                </picture>
+
+                <h2 class="event-card__title">Вечер | The Best of Sade</h2>
+
+                <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+
+                <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
+              </a>
+            </article>
+          </div>
+          <div class="upcoming__slider-wrapper">
+            <a href="#" class="upcoming__link-left link">
+              <svg class="link__icon link__icon--180deg" width="91" height="60">
+                <use xlink:href="assets/icons/symbols.svg#link"></use>
+              </svg>
+            </a>
+            <div class="upcoming__group">
+              <span class="upcoming__group-element"></span>
+              <span class="upcoming__group-element"></span>
+              <span class="upcoming__group-element upcoming__group-element--black"></span>
+              <span class="upcoming__group-element"></span>
+              <span class="upcoming__group-element"></span>
+            </div>
+            <a href="#" class="upcoming__link-right link">
+              <svg class="link__icon" width="91" height="60">
+                <use xlink:href="assets/icons/symbols.svg#link"></use>
+              </svg>
+            </a>
+          </div>
+          <a href="#" class="upcoming__link show-link">Смотреть все</a>
+          <div class="upcoming__border-bottom"></div>
+        </div>
+      </section>
+
       <section class="listing @@class">
         <h2 class="listing__title section-title">Блог</h2>
         <div class="listing__article-list">
@@ -164,6 +239,8 @@
         </div>
         <a href="#" class="listing__link show-link">Смотреть все</a>
       </section>
+
+
       <section class="contacts @@class">
         <div class="contacts__container">
           <h2 class="contacts__title section-title">
