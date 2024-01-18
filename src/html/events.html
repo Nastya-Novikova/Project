@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+>
 <html lang="ru">
 
 @@include('blocks/head.html')  
@@ -7,6 +11,7 @@
     @@include('blocks/page-header.html')
 
     <main class="main">
+      @@include('blocks/breadcrumbs.html')
         <div class="events">
             <section class="listing events__listing">
               <h2 class="listing__title section-title">Мероприятия</h2>
@@ -97,7 +102,7 @@
                         <th class="table__body-th">Стоимость за час</th>
                         <td class="table__td">1 000 ₽</td>
                         <td class="table__td">3 000 ₽</td>
-                        <td class="table__td">3 000 ₽</td>
+                        <td class="table__td">от 6 000 ₽</td>
                       </tr>
                       <tr class="table__tr">
                         <th class="table__body-th">Ведущий мероприятия</th>
