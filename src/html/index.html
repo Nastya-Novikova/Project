@@ -1,47 +1,39 @@
 <!DOCTYPE html>
-<meta
-  name="viewport"
-  content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
->
 <html lang="ru">
+  @@include('blocks/head.html')
 
-  @@include('blocks/head.html')  
-
-  <body class = "body">
+  <body class="body">
     @@include('blocks/page-header.html')
 
     <main class="main">
       <div class="home">
         <header class="main-header home__main-header">
           <h1 class="main-header__title">Арт - пространство</h1>
-          <picture class="main-header__picture">
-            <svg class="main-header__img" width = "1920" height = "325">
-              <use xlink:href = "assets/icons/symbols.svg#lenni"></use>
+          <a class="main-header__picture">
+            <svg class="main-header__img" width="1920" height="325">
+              <use xlink:href="assets/icons/symbols.svg#lenni"></use>
             </svg>
-          </picture>
+          </a>
           <p class="main-header__text">
-            для людей, горящих сердцем и делом
-            место для настоящего
+            для людей, горящих сердцем и делом место для настоящего
           </p>
         </header>
 
-        <section class="offers home__offers"></section>
-
+        @@include('blocks/offers.html', {class: 'home__offers'})
         @@include('blocks/about.html', {class: 'home__about'})
-
         @@include('blocks/upcoming.html', {class: 'home__upcoming'})
+        @@include('blocks/blog-listing.html', {class: 'home__listing'})
+        @@include('blocks/contacts.html', {class: 'home__contacts'})
 
-        @@include('blocks/blog-listing.html', class: 'home__listing')
-        
-        @@include('blocks/contacts.html', class: 'home__contacts')
-
-        <div class="doit home__doit"></div>
-
+        <div class="doit home__doit">
+          <div class="doit__text-wrapper">
+            <p class="doit__line1">Просто делайте, что нравится,</p>
+            <p class="doit__line2">а мы вам поможем</p>
+          </div>
+        </div>
       </div>
     </main>
 
-    @@include('blocks/page-footer.html')
-
-    @@include('blocks/event-pp.html')
+    @@include('blocks/page-footer.html') @@include('blocks/event-pp.html')
   </body>
 </html>

@@ -1,10 +1,10 @@
 <section class="upcoming @@class">
-        <div class="upcoming__container">
-            <div class="upcoming__border-top"></div>
-            <h2 class="upcoming__title section-title">Мероприятия</h2>
-                <div class="upcoming__listing listing__events-list">
-                    <!-- prettier-ignore -->
-                    @@loop('event-card.html', [
+  <div class="upcoming__container">
+    <div class="upcoming__border-top"></div>
+    <h2 class="upcoming__title section-title">Мероприятия</h2>
+    <div class="upcoming__listing listing__events-list">
+      <!-- prettier-ignore -->
+      @@loop('event-card.html', [
                     {
                         "class": "upcoming__listing listing__event-card",
                         "img": "assets/images/events/nirvana.jpg",
@@ -33,27 +33,29 @@
                         "datetime": "2022-12-16T20:00"
                     }
                     ])
-                </div>
-            <div class="upcoming__slider-wrapper">
-                <a href="#" class="upcoming__link-left link">
-                    <svg class="link__icon link__icon--180deg" width = "91" height = "60">
-                        <use xlink:href = "assets/icons/symbols.svg#link"></use>
-                    </svg>
-                </a>
-                <div class="upcoming__group">
-                    <span class="upcoming__group-element"></span>
-                    <span class="upcoming__group-element"></span>
-                    <span class="upcoming__group-element upcoming__group-element--black"></span>
-                    <span class="upcoming__group-element"></span>
-                    <span class="upcoming__group-element"></span>
-                </div>
-                <a href="#" class="upcoming__link-right link">
-                    <svg class="link__icon" width = "91" height = "60">
-                        <use xlink:href = "assets/icons/symbols.svg#link"></use>
-                    </svg>
-                </a>
-            </div>
-            <a href="#" class="upcoming__link show-link">Смотреть все</a>
-            <div class="upcoming__border-bottom"></div>
-        </div>
-  </section>
+    </div>
+    <div class="upcoming__slider-wrapper">
+      <a href="#" class="upcoming__link-left link">
+        <svg class="link__icon link__icon--180deg" width="91" height="60">
+          <use xlink:href="assets/icons/symbols.svg#link"></use>
+        </svg>
+      </a>
+      <div class="upcoming__group">
+        <span class="upcoming__group-element"></span>
+        <span class="upcoming__group-element"></span>
+        <span
+          class="upcoming__group-element upcoming__group-element--black"
+        ></span>
+        <span class="upcoming__group-element"></span>
+        <span class="upcoming__group-element"></span>
+      </div>
+      <a href="#" class="upcoming__link-right link">
+        <svg class="link__icon" width="91" height="60">
+          <use xlink:href="assets/icons/symbols.svg#link"></use>
+        </svg>
+      </a>
+    </div>
+    <a href="#" class="upcoming__link show-link">Смотреть все</a>
+    <div class="upcoming__border-bottom"></div>
+  </div>
+</section>

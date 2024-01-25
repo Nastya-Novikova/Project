@@ -31,7 +31,6 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-
     }
 
     &__nav {
@@ -52,12 +51,12 @@
         }
     }
 
-    &__nav-link {
-        display: block;
+    &__nav-link,
+    &__link-politics,
+    &__link-cookies {
         text-decoration: none;
         font-size: 16px;
         font-weight: 600;
-        color: @black;
         transition: color 0.2s;
         &:hover {
             @media (hover:hover ) {
@@ -68,5 +67,77 @@
         &:active {
             color: @red;
         }
+    }
+
+    &__nav-link {
+        display: block;
+        color: @black;
+    }
+
+    &__information-wrapper {
+        display: flex;
+        margin-top: 60px;
+    }
+
+    &__documents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__documents-label,
+    &__company-text {
+        font-family: @fontSans;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        color: @black;
+    }
+
+    &__documents-label {
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    &__documents-links {
+        display: inline-flex;
+        align-items: flex-end;
+        gap: 60px;
+    }
+
+    &__link-politics,
+    &__link-cookies {
+        color: #111111;
+        line-height: normal;
+    }
+
+    &__networks {
+        display: inline-flex;
+        gap: 45px;
+        margin: 0 305px 0 203px;
+    }
+
+    &__networks-link {
+        display: inline-flex;
+        align-items: flex-end;
+        transition: color 0.2s;
+        &:hover {
+            @media (hover:hover ) {
+                color: @red;
+            }
+        }
+
+        &:active {
+            color: @red;
+        }
+    }
+
+    &__company {
+        display: inline-flex;
+        align-items: flex-end;
+        gap: 15px;
+    }
+
+    &__company-text {
+        font-weight: 600;
     }
 }
