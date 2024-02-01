@@ -46,7 +46,9 @@
 }
 
 &__nav{
-    display: inline-block;
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
 }
 
 &__nav-link{
@@ -57,14 +59,18 @@
     line-height: 25px;
     text-decoration: none;
     transition: color 0.2s;
-    &:first-child {
-        margin: 0 25px 0 0;
-    }
 }
 
 &__nav-link:hover{
     color: @red;
 }
+
+&__right-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 202px;
+  }
 
 &__user-btn{
     box-sizing: border-box;
