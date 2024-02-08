@@ -20,7 +20,7 @@ import server from "browser-sync";
 
 const resources = {
     html: "src/html/**/*.html",
-    jsDev: "src/scripts/dev/*.js    ",
+    jsDev: "src/scripts/dev/*.js",
     jsVendor: "src/scripts/vendor/*.js",
     less: "src/styles/**/*.less",
     static: [

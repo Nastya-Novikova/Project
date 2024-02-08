@@ -1,0 +1,22 @@
+.arrow {
+    border: none;
+    background-color: transparent;
+
+    &--left {
+        transform: rotate(180deg);
+    }
+
+    &--disabled {
+        color: @gray_dark;
+        pointer-events: none;
+    }
+
+    &:active {
+        color: @red_dark;
+    }
+    &:hover {
+        @media (hover: hover) {
+            color: @red_dark;
+        }
+    }
+}

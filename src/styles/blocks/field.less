@@ -12,9 +12,23 @@
         }
     }
 
+    &__date {
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        max-width: 250px;
+    }
+
     &__inputs {
         display: flex;
-        gap: 15px;
+        //gap: 15px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 55px;
+        pointer-events: none;
     }
 
     &__select,
@@ -39,25 +53,42 @@
         height: 150px;
     }
 
-    &__input {
-        &--w55 {
-            width: 55px;
-
-        }
-
-        &--w110 {
-            width: 110px;
-
-        }
-
-        &--datetime {
-            padding: 17px 13px 16px;
-            text-align: center;
+    &__date-input {
+        
+        &--year {
+            flex-grow: 1;
+            margin-right: 0;
         }
 
         &::placeholder {
             font-size: 16px;
         }
+
+        box-sizing: border-box;
+        display: block;
+        width: 55px;
+        height: 55px;
+        margin-right: 15px;
+        border: 0;
+        border-radius: 5px;
+        background-color: @white;
+        padding: 0 5px;
+        font-size: 16px;
+        line-height: 1.375;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    &__date-picker {
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        max-width: 250px;
+        height: 55px;
+        border: 0;
+        border-radius: 5px;
+        opacity: 0;
+        cursor: pointer;
     }
 
     &__label {

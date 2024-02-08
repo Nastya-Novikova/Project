@@ -8,6 +8,29 @@
     "order legend";
     width: 100%;
 
+    @media @bw1340 {
+        gap: 65px 6.5%;
+        grid-template-columns: 340px calc(93.5% - 340px);
+    }
+
+    @media @bw1020 {
+        gap: 60px;
+        grid-template-columns: auto 390px;
+        grid-template-areas: 
+          "scheme scheme"
+          "checks legend"
+          "checks order"; 
+    }
+
+    @media @bw768 {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+          "scheme"
+          "legend"
+          "checks"
+          "order"; 
+    }
+
     &__checks{
         grid-area: checks;
         display: flex;
@@ -24,6 +47,14 @@
     
     &__order{
         grid-area: order;
+
+        @media @bw1340 {
+            min-width: 380px;
+        }
+        @media @bw1020 {
+            min-width: 280px;
+        }
+
     }
     
     &__legeng{
@@ -41,6 +72,11 @@
         line-height: 25px;
         &--mb30 {
             margin-bottom: 30px;
+        }
+
+        @media @bw768 {
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 
@@ -112,6 +148,10 @@
           content: attr(data-currency);
           margin-left: 4px;
         }
+
+        @media @bw768 {
+            font-size: 16px;
+        }
     }
 
     &__total {
@@ -131,11 +171,22 @@
           content: attr(data-currency);
           margin-left: 4px;
         }
+
+        @media @bw370 {
+            font-size: 18px;
+        }
     }
 
     &__submit {
-        width: 405px;
-        padding: 15px 131px;
+        max-width: 405px;
+        width: 100%;
+        padding: 15px 128px;
+
+        @media @bw768 {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 15px 85px;
+        }
     }
 
     &__price {
@@ -143,6 +194,10 @@
         flex-direction: column;
         align-items: flex-end;
         margin: 0 0 35px;
+
+        @media @bw768 {
+            align-items: flex-start;
+        }
     }
 
     &__price-item {
@@ -185,6 +240,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+
+        @media @bw768 {
+            align-items: flex-start;
+        }
     }
 
     &__note {
