@@ -1,8 +1,23 @@
-.check{
+.check {
     box-sizing: border-box;
     position: relative;
-    padding-left: 40px;
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 24px;
+    padding-top: 2px;
+    padding-left: 24px;
+    color: @black;
+    cursor: pointer;
+  
+    label.error,
+    span.error {
+        color: @red_dark;
+        display: block;
+        margin: 5px 0 0 15px;
+        font-size: 14px;
+        font-weight: 400;
+    }
 
     &--red {
         color: @red;
@@ -24,43 +39,45 @@
       }
 
     &__input {
-        .is-hidden;
-        &:checked {
-            &~.check__mark {
-                background-color: @black;
-                &::after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top:2px;
-                    left:7px;
-                    width: 6px;
-                    height: 12px;
-                    border-bottom: 2px solid @white;
-                    border-right:  2px solid @white;
-                    transform: rotate(45deg);
-                }
-            }
+      .is-hidden;
+  
+      &:checked {
+        & ~ .check__mark {
+          background-color: @black;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 7px;
+            top: 2px;
+            width: 6px;
+            height: 12px;
+            border-bottom: 2px solid @white;
+            border-right: 2px solid @white;
+            transform: rotate(45deg);
+          }
         }
+      }
     }
-
     &__mark {
-        position: absolute;
-        top:0;
-        left:0;
-        width: 24px;
-        height: 24px;   
-        border: 1px solid @black;
-        background-color: transparent;
-        transition: background-color 0.2s;
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid @black;
     }
-
     &__label {
+      margin-left: 15px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      &--s {
         font-size: 14px;
-        color: @black;
-        &--red {
-            color: @red;
-        }
-
+        font-weight: 400;
+        line-height: 19px;
+      }
     }
-}
+  }

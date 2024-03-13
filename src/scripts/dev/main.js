@@ -302,25 +302,22 @@ if (dateField.length) {
     const dateDay = pick.find(".js-dateDay");
     const dateMonth = pick.find(".js-dateMonth");
     const dateYear = pick.find(".js-dateYear");
-
     const dateConfig = {
       autoClose: true,
       minDate: new Date(),
       navTitles: {
-        days: "MMMM <i>yyyy</i>",
+        days: "MMMM <i>yyyy</i>"
       },
       onSelect: function ({ date }) {
         dateDay.val(date ? ("0" + date.getDate()).slice(-2) : "");
-        dateMonth.val(date ? ("0" + (date.getMonth()+1)).slice(-2) : "");
-        dateYear.val(date ? "0" + date.getFullYear() : "");
-      },
+        dateMonth.val(date ? ("0" + (date.getMonth() + 1)).slice(-2) : "");
+        dateYear.val(date ? date.getFullYear() : "");
+      }
     };
-
     new AirDatepicker(dateInput[0], dateConfig);
   };
-
-  $.each(dateField, function() {
+  $.each(dateField, function (i) {
     pickerInit($(this));
-  })
+  });
 }
 })();

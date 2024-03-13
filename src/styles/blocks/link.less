@@ -18,11 +18,12 @@
         color: @red;
     }
 
-    /*&__icon {
-        &--180deg {
-            transform: rotate(180deg);
+    &__icon {
+        @media @bw1340 {
+            width: 67px;
+            height: 40px;
         }
-    }*/
+    }
 
     &--mb20{
         margin-bottom: 20px;

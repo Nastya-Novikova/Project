@@ -9,6 +9,7 @@
     font-weight: 600;
     color: @black;
     transition: color 0.2s;
+    width: 110px;
 
     &:hover {
         @media (hover:hover) {
@@ -17,5 +18,12 @@
     }
     &:active {
         color: @red;
+    }
+
+    @media @bw400 {
+        margin-top: 20px;
+        padding: 15px 0px 15px 20px;
+        font-size: 14px;
+        width: 100px;
     }
 }

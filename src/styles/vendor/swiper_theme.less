@@ -72,6 +72,7 @@
     margin: 70px auto 0;
     @media @bw1340 {
       width: 300px;
+      height: 40px;
     }
     @media @bw768 {
       margin: 60px auto 0;
@@ -100,6 +101,10 @@
     background-color: @gray_dark;
     background-clip: padding-box;
     opacity: 1;
+
+    @media @bw768 {
+      width: 9px;
+    }
   }
 
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
