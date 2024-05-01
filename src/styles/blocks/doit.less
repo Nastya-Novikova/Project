@@ -12,17 +12,64 @@
         font-style: normal;
         font-weight: 700;
         line-height: 153.6px;
+
+        @media @bw1660 {
+            font-size: 90px;
+            line-height: 108px;
+            margin: 40px auto 95px;
+        }
+
+        @media @bw1020 {
+            font-size: 80px;
+            line-height: 96px;
+            margin: 0px auto 100px;
+        }
     }
 
     &__line1 {
         position: relative;
+        display: inline-block;
         margin: 0;
         left: -52px;
+
+        @media @bw1660 {
+            left: -40px;
+        }
+
+        @media @bw1020 {
+            display:block;
+            left: -90px;
+        }
     }
 
     &__line2 {
         position: relative;
+        display: inline-block;
+        margin: 0;
+        left: -52px;
+
+        @media @bw1660 {
+            left: -40px;
+        }
+
+        @media @bw1020 {
+            display:block;
+            left: 100px;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__line3 {
+        position: relative;
         margin: 0;
         right: -190px;
+
+        @media @bw1660 {
+            right: -140px;
+        }
+
+        @media @bw1020 {
+            left: -5px;
+        }
     }
 }

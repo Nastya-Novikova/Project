@@ -1,5 +1,8 @@
 .offers {
     margin-bottom: 200px;
+    @media @bw1020 {
+        margin-bottom: 130px;
+    }
     
     &__wrapper {
         .width_624;
@@ -20,6 +23,10 @@
         line-height: 30px;
         letter-spacing: 0.44px;
         text-transform: uppercase;
+
+        @media @bw1020 {
+            font-size: 16px;
+        }
     }
 
     &__btn-wrapper {

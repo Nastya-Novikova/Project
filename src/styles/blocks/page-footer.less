@@ -82,6 +82,10 @@
     &__documents {
         display: flex;
         flex-direction: column;
+
+        @media @bw1020 {
+            margin-top: 110px;
+        }
     }
 
     &__documents-label,
@@ -96,24 +100,48 @@
     &__documents-label {
         font-weight: 400;
         margin-bottom: 20px;
+
+        @media @bw1020 {
+            font-size: 14px;
+            line-height: 19.07px;
+        }
     }
 
     &__documents-links {
         display: inline-flex;
         align-items: flex-end;
         gap: 60px;
+        max-width: 385px;
+        width: 100%;
+        @media @bw1020 {
+            gap: 15px;
+        }
     }
 
     &__link-politics,
     &__link-cookies {
         color: #111111;
         line-height: normal;
+
+        @media @bw1020 {
+            font-size: 14px;
+            line-height: 19.07px;
+        }
     }
 
     &__networks {
         display: inline-flex;
         gap: 45px;
-        margin: 0 305px 0 203px;
+        margin: 0 305px 0 190px;
+
+        @media @bw1660 {
+            margin: 0 255px 0 165px;
+        }
+
+        @media @bw1020 {
+           position:absolute;
+           margin: 0 270px;
+        }
     }
 
     &__networks-link {
@@ -135,9 +163,26 @@
         display: inline-flex;
         align-items: flex-end;
         gap: 15px;
+        max-width: 295px;
+        width: 100%;
+
+        @media @bw1020 {
+            margin-left: 155px;
+            max-width: 255px;
+        }
     }
 
     &__company-text {
         font-weight: 600;
+        @media @bw1020 {
+            font-size: 14px;
+            line-height: 19.07px;
+        }
+    }
+
+    &__form {
+        display:grid;
+        row-gap: 15px;
+        grid-template-rows: 24px 65px;
     }
 }
