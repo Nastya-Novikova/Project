@@ -3,6 +3,9 @@
     @media @bw1020 {
         padding-bottom: 50px;
     }
+    @media @bw500 {
+        padding-bottom: 60px;
+    }
 
     &__container {
         .container;
@@ -21,6 +24,12 @@
 
         @media @bw1020 {
             font-size: 26px;
+        }
+
+        @media @bw500 {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0 0 30px;
         }
 
         &--w868 {
@@ -47,6 +56,9 @@
             @media @bw1020 {
                 margin-top: 80px;
             }
+            @media @bw500 {
+                margin-top: 60px;
+            }
         }
     }
 
@@ -67,9 +79,11 @@
             @media @bw1660 {
                 margin-left: 430px;
             }
-
             @media @bw1020 {
                 width: 346px;
+            }
+            @media @bw500 {
+                width: 280px;
             }
         }
 
@@ -89,6 +103,14 @@
 
             &--ml {
                 margin-left: 70px;
+            }
+        }
+
+        @media @bw500 {
+            margin: 0 0 60px;
+
+            &--mb130 {
+                margin: 0 0 40px;
             }
         }
     }
@@ -125,6 +147,9 @@
             flex-direction: row-reverse;
             gap: 30px;
         }
+        @media @bw500 {
+            flex-direction: column-reverse;
+        }
     }
 
     &__block2-container {
@@ -149,11 +174,26 @@
             @media @bw1020 {
                 padding-top: 160.029%;
             }
+            @media @bw500{
+                padding-top:122.029%;
+            }
         }
 
         @media @bw1020 {
             max-width: 262px;
             width: 100%;
+        }
+
+        @media @bw500 {
+            min-width: 100px;
+            width: 100%;
+        }
+
+        @media @bw500 {
+            max-width: 195px;
+            width: 100%;
+            margin-top: -40px;
+            margin-bottom: 50px;
         }
     }
 
@@ -166,6 +206,10 @@
         @media @bw1020 {
             flex-wrap: wrap;
             gap: 80px;
+        }
+
+        @media @bw500 {
+            gap: 60px;
         }
     }
 
@@ -204,6 +248,13 @@
         bottom: 0;
         width: calc(100% - 58px);
         object-fit: contain;
+
+        @media @bw500 {
+            width: calc(100% - 13px);
+            top: 5px;
+            left: 11px;
+            right: 2px;
+        }
     }
 
     &__block3-wrapper {
@@ -215,11 +266,19 @@
             justify-content: space-between;
             align-items: flex-end;
         }
+        @media @bw500{
+            flex-direction: column;
+        }
     }
 
     &__link {
         @media @bw1020 {
             max-width: 262px;
+            width: 100%;
+        }
+
+        @media @bw500{
+            max-width: 280px;
             width: 100%;
         }
     }

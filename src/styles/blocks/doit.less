@@ -24,6 +24,12 @@
             line-height: 96px;
             margin: 0px auto 100px;
         }
+        @media @bw600{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;          
+            margin: 0px auto 100px;
+        }
     }
 
     &__line1 {
@@ -39,6 +45,11 @@
         @media @bw1020 {
             display:block;
             left: -90px;
+        }
+        @media @bw600 {
+            display:block;
+            left: -13px;
+            margin-bottom: 9px;
         }
     }
 
@@ -57,6 +68,11 @@
             left: 100px;
             margin-bottom: 28px;
         }
+        @media @bw600 {
+            display:block;
+            left: 67px;
+            margin-bottom: 9px;
+        }
     }
 
     &__line3 {
@@ -70,6 +86,9 @@
 
         @media @bw1020 {
             left: -5px;
+        }
+        @media @bw600 {
+            left: -55px;
         }
     }
 }

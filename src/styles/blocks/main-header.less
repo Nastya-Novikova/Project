@@ -4,6 +4,10 @@
     @media @bw1020 {
         padding: 80px 0;
     }
+
+    @media @bw500 {
+        padding: 80px 0 40px 0;
+    }
 &__title,
 &__text{
     padding-left: 40px;
@@ -25,7 +29,12 @@
     }
 
     @media @bw768 {
+        font-size: 16px;
+    }
+
+    @media @bw500 {
         font-size: 13px;
+        line-height:16.64px;
     }
 }
 
@@ -34,12 +43,18 @@
     @media @bw1020 {
         margin: 0 0 50px;
     }
+    @media @bw500 {
+        margin: 0 0 28px;
+    }
 }
 
 &__text{
     margin: 0 auto;
     max-width: 990px;
-    width: 100%
+    width: 100%;
+    @media @bw768 {
+        padding: 0;
+    }
 }
 
 &__picture{
@@ -53,6 +68,9 @@
     }
     @media @bw1020 {
         margin-bottom: 50px;
+    }
+    @media @bw500 {
+        margin: 0 0 28px;
     }
 }
 
